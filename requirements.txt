@@ -1,0 +1,15 @@
+appdirs==1.4.3
+beautifulsoup4==4.5.3
+bottle==0.12.13
+click==6.7
+html5lib==0.999999999
+iniherit==0.3.6
+lxml==3.7.3
+packaging==16.8
+peewee==2.9.2
+pyparsing==2.2.0
+python-dotenv==0.6.4
+python-slugify==1.2.4
+six==1.10.0
+Unidecode==0.4.20
+webencodings==0.5.1
