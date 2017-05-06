@@ -50,7 +50,7 @@ def get_pagination_object(query, page, limit):
 		num_pages = avg + 1 if rem > 0 else avg
 
 	next_page = page+1 if num_pages > page else None
-	prev_page = page-1 if page > 1 else null
+	prev_page = page-1 if page > 1 else None
 	return {
 		"total": count,
 		"num_of_pages": num_pages,
@@ -113,7 +113,7 @@ def error_500(error):
 api_key = os.environ.get("API_KEY")
 if not api_key:
 	raise Error
-	
+
 myapp = Auth(unilagapi, api_key)
 
 if __name__ == "__main__":
