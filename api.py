@@ -111,6 +111,10 @@ def error_500(error):
 
 
 api_key = os.environ.get("API_KEY")
+if not api_key:
+	raise Error
+	
 myapp = Auth(unilagapi, api_key)
 
-run(myapp, host='localhost', port=5000)
+if __name__ == "__main__":
+	run(myapp, host='localhost', port=5000)

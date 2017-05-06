@@ -2,7 +2,7 @@ appdirs==1.4.3
 beautifulsoup4==4.5.3
 bottle==0.12.13
 click==6.7
-html5lib==0.999999999
+gunicorn==19.7.1
 iniherit==0.3.6
 lxml==3.7.3
 packaging==16.8
