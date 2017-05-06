@@ -12,12 +12,13 @@ def init():
 	global has_loaded
 
 	has_loaded = False
-	curr_path = os.path.abspath(os.path.dirname(__file__))
 	dotenv_path = os.path.abspath(os.path.join(curr_path, '.env'))
-	migration_path = os.path.abspath(os.path.join(curr_path, 'migrations'))
-	sqlite_db_path = os.path.abspath(os.path.join(os.path.dirname(__file__), 'unilag_news.db'))
-
 	load_dotenv(dotenv_path)
+	curr_path = os.path.abspath(os.path.dirname(__file__))
+	migration_path = os.path.abspath(os.path.join(curr_path, 'migrations'))
+	sqlite_db_path = os.path.abspath(os.path.join(os.path.dirname(__file__), os.environ.get("DB_NAME")))
+
+	
 
 	environment = os.environ.get("ENVIRONMENT")
 	if environment == "development":
