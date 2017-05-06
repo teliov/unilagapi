@@ -2,3 +2,4 @@ unilagapi/
 *.pyc
 *.db
 *.log
+.env
